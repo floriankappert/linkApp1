@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LinkApp1</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<%= link_to "all links", links_path %> | 
+<%= link_to "all keywords", keywords_path %> | 
+<%= link_to "all domains", domains_path %> | 
+<%= link_to "all states", states_path %> |
+<%= link_to "all customers", customers_path %> |
+<%= link_to "all profiles", profiles_path %>   
+
+
+
+<%= yield %>
+
+
+</body>
+</html>

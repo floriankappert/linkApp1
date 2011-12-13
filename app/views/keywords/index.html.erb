@@ -1,0 +1,28 @@
+<h1>Keywords#index</h1>
+
+<table>
+  <tr>
+    <th>Keyword</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @keywords.each do |keyword| %>
+  <tr>
+    <td><%= keyword.text %></td>
+    <td><%= link_to 'Show', keyword %></td>
+    <td><%= link_to 'Edit', edit_keyword_path(keyword) %></td>
+    <td><%= link_to 'Destroy', keyword, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+  <% keyword.links.each do |link| %>
+  <tr>
+  	<td colspan="4"><%= link.domain.host %></td>	
+  <% end %>
+  
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Keyword', new_keyword_path %>

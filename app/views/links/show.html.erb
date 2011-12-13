@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Url:</b>
+  <%= @link.url %>
+  
+  <b>Domain:</b>
+  <%= @link.domain.host %>
+  
+  <b>Keyword:</b>
+  <%= @link.keyword.text %>
+
+  
+</p>
+
+
+<%= link_to 'Edit', edit_link_path(@link) %> |
+<%= link_to 'Back', links_path %>
+<%= link_to 'New Link', new_link_path %>

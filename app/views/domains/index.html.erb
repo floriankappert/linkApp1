@@ -1,0 +1,19 @@
+<h1>Domains#index</h1>
+
+<table>
+  <tr>
+    <th>Domain</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% make_domains_uniq(@domains).each do |domain| %>
+  <tr>
+    <td><%= domain.host %></td>
+    <td><%= link_to 'Destroy', domain, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />

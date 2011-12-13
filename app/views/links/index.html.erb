@@ -1,0 +1,23 @@
+<h1>Listing links</h1>
+
+<table>
+<% @domains.each do |domain| %>
+	<tr>
+		<td colspan="4">
+			<strong><%= domain.host %></strong>
+		</td>
+	</tr>
+	
+	<% domain.links.each do |link| %>
+	  <tr>
+	    <td><%= link.url %></td>
+	    <td><%= link_to 'Show', link %></td>
+	    <td><%= link_to 'Edit', edit_link_path(link) %></td>
+	    <td><%= link_to 'Destroy', link, :confirm => 'Are you sure?', :method => :delete %></td>
+	  </tr>
+	<% end %>
+<% end %>
+</table>
+<br />
+
+<%= link_to 'New Link', new_link_path %>

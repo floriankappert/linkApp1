@@ -1,4 +1,4 @@
-<h1>Domains#index</h1>
+<h1>Listing Domains</h1>
 
 <table>
   <tr>
@@ -8,7 +8,7 @@
     <th></th>
   </tr>
 
-<% make_domains_uniq(@domains).each do |domain| %>
+<% @domains.each do |domain| %>
   <tr>
     <td><%= domain.host %></td>
     <td><%= link_to 'Destroy', domain, :confirm => 'Are you sure?', :method => :delete %></td>

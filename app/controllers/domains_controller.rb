@@ -1,7 +1,7 @@
 class DomainsController < ApplicationController
   def index
     @domains = Link.all
-    @uniqdomains = @domains.uniq
+    
     respond_to do |format|
       format.html # index.html.erb
       format.json { render :json => @domains }
@@ -21,7 +21,7 @@ class DomainsController < ApplicationController
   # POST /domains.json
   def create
     @domain = Domain.new(params[:domain])
-
+    
     respond_to do |format|
       if @domain.save
         format.html { redirect_to @domain, :notice => 'Domain was successfully created.' }

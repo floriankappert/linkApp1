@@ -9182,3 +9182,66 @@ Served asset /links.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at Tue Dec 13 00:13:35 +0100 2011
 Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-13 17:48:34 +0100
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (22.9ms)
+Cache for Asset (application.js) is stale
+/Library/Ruby/Gems/1.8/gems/jquery-rails-1.0.19/vendor/assets/javascripts/jquery.js isn't in paths: /Users/Flo/Entwicklung/Rails/linkApp1/app/assets/images, /Users/Flo/Entwicklung/Rails/linkApp1/app/assets/javascripts, /Users/Flo/Entwicklung/Rails/linkApp1/app/assets/stylesheets, /Users/Flo/Entwicklung/Rails/linkApp1/vendor/assets/stylesheets, /Users/Flo/.rvm/gems/ruby-1.9.2-p290/gems/jquery-rails-1.0.19/vendor/assets/javascripts
+Compiled application.js  (4ms)  (pid 4457)
+Compiled jquery.js  (11ms)  (pid 4457)
+Compiled jquery_ujs.js  (0ms)  (pid 4457)
+Completed 200 OK in 164ms (Views: 163.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-12-13 17:48:36 +0100
+Served asset /application.css - 200 OK (7ms)
+
+
+Started GET "/assets/domains.css?body=1" for 127.0.0.1 at 2011-12-13 17:48:36 +0100
+Served asset /domains.css - 200 OK (2ms)
+
+
+Started GET "/assets/keywords.css?body=1" for 127.0.0.1 at 2011-12-13 17:48:36 +0100
+Served asset /keywords.css - 200 OK (1ms)
+
+
+Started GET "/assets/links.css?body=1" for 127.0.0.1 at 2011-12-13 17:48:36 +0100
+Served asset /links.css - 200 OK (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-12-13 17:48:36 +0100
+Served asset /scaffolds.css - 200 OK (1ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-12-13 17:48:36 +0100
+Served asset /home.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-12-13 17:48:36 +0100
+Served asset /jquery.js - 200 OK (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-12-13 17:48:36 +0100
+Served asset /jquery_ujs.js - 200 OK (1ms)
+
+
+Started GET "/assets/domains.js?body=1" for 127.0.0.1 at 2011-12-13 17:48:36 +0100
+Served asset /domains.js - 200 OK (2ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-12-13 17:48:36 +0100
+Served asset /home.js - 200 OK (2ms)
+
+
+Started GET "/assets/keywords.js?body=1" for 127.0.0.1 at 2011-12-13 17:48:36 +0100
+Served asset /keywords.js - 200 OK (1ms)
+
+
+Started GET "/assets/links.js?body=1" for 127.0.0.1 at 2011-12-13 17:48:36 +0100
+Served asset /links.js - 200 OK (19ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-12-13 17:48:36 +0100
+Served asset /application.js - 200 OK (0ms)

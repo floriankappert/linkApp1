@@ -1,4 +1,4 @@
-o: ActiveSupport::Cache::Entry	:@value{	I"length:EFi/I"digest;F"%2160b10d5e669024a619b384ec919b67I"source;FI"//*!
+o: ActiveSupport::Cache::Entry	:@value{	"_version"%db046dcb2e0236bb03fafe1fa10e0aba"digest"%052c317de2536fdd7077604e52dd9c5f"lengthiê"source"ê/*!
  * jQuery JavaScript Library v1.7.1
  * http://jquery.com/
  *
@@ -9645,12 +9645,19 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
 
 
 
-
+  jQuery(function() {
+    return $('.best_in_place').best_in_place();
+  });
 // This is a manifest file that'll be compiled into including all the files listed below.
 // Add new JavaScript/Coffee code in separate files in this directory and they'll automatically
 // be included in the compiled file accessible from http://example.com/assets/application.js
 // It's not advisable to add code directly here, but if you do, it'll appear at the bottom of the
 // the compiled file.
 //
-;
-;FI"_version;F"%bf1dd794ef91a4c789d40f14e1998ca7:@compressedF:@created_atf1323794916.048203 Â:@expires_in0
+
+
+$(document).ready(function() {
+  /* Activating Best In Place */
+  jQuery(".best_in_place").best_in_place();
+});
+:@compressedF:@created_atf1323846587.7290249 ¨X:@expires_in0

@@ -1,6 +1,6 @@
 class DomainsController < ApplicationController
   def index
-    @domains = Link.all
+    @domains = Domain.all
     
     respond_to do |format|
       format.html # index.html.erb

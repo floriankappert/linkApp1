@@ -10443,3 +10443,26 @@ Served asset /links.js - 200 OK (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-12-13 17:55:43 +0100
 Served asset /application.js - 200 OK (0ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateLinks (20111212202258)
+Migrating to CreateProfiles (20111212202457)
+Migrating to CreateStates (20111212203158)
+Migrating to CreateCustomers (20111212203548)
+Migrating to CreateDomains (20111212203948)
+Migrating to CreateKeywords (20111212204109)
+Migrating to AddTextkeyToKeywords (20111212213619)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("customers")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_customers_on_profile_id')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("domains")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_domains_on_customer_id')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("keywords")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_keywords_on_customer_id')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("links")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_links_on_state_id')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_links_on_keyword_id')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_links_on_domain_id')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_links_on_customer_id')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("profiles")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("states")

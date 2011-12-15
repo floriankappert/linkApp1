@@ -18,7 +18,7 @@ class CustomersController < ApplicationController
   end
   
   def create
-    @customer = Customer.new(params[:Customer])
+    @customer = Customer.new(params[:customer])
 
     respond_to do |format|
       if @customer.save
@@ -41,6 +41,20 @@ class CustomersController < ApplicationController
     respond_to do |format|
       format.html # show.html.erb
       format.json { render :json => @customer }
+    end
+  end
+  
+  def update
+    @customer = Customer.find(params[:id])
+
+    respond_to do |format|
+      if @customer.update_attributes(params[:customer])
+        format.html { redirect_to @customer, :notice => 'Customer was successfully updated.' }
+        format.json { head :ok }
+      else
+        format.html { render :action => "edit" }
+        format.json { render :json => @customer.errors, :status => :unprocessable_entity }
+      end
     end
   end
   

@@ -1,0 +1,13 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>State:</b>
+  <%= @state.text %>
+
+  
+</p>
+
+
+<%= link_to 'Edit', edit_state_path(@state) %> |
+<%= link_to 'Back', states_path %>
+<%= link_to 'New State', new_state_path %>

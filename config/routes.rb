@@ -1,4 +1,20 @@
 LinkApp1::Application.routes.draw do
+  get "customers/index"
+
+  get "customers/new"
+
+  get "customers/edit"
+
+  get "customers/show"
+
+  get "states/index"
+
+  get "states/new"
+
+  get "states/edit"
+
+  get "states/show"
+
   get "domains/index"
 
   get "domains/show"

@@ -44,15 +44,7 @@ class LinksController < ApplicationController
   def create
     @link = Link.new(params[:link])
     
-    require 'uri'
-    host = URI.parse(@link.url).host
-    
-    hostname = Domain.where(:host => @link.host).first
-    if( hostname == nil)
-      hostname = Domain.new(:host => host)
-      hostname.save
-    end
-    @link.domain = hostname 
+    @link.domain = Domain.find_or_create_by_host(@link.host)
 
     respond_to do |format|
       if @link.save
@@ -69,7 +61,9 @@ class LinksController < ApplicationController
   # PUT /links/1.json
   def update
     @link = Link.find(params[:id])
-
+    @link.update_attributes(params[:link])
+    @link.domain = Domain.find_or_create_by_host(@link.host)
+    
     respond_to do |format|
       if @link.update_attributes(params[:link])
         format.html { redirect_to @link, :notice => 'Link was successfully updated.' }

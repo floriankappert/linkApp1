@@ -45,5 +45,15 @@ class KeywordsController < ApplicationController
       format.json { render :json => @link }
     end
   end
+  
+  def destroy
+    @keyword = Keyword.find(params[:id])
+    @keyword.destroy
+
+    respond_to do |format|
+      format.html { redirect_to links_url }
+      format.json { head :ok }
+    end
+  end
 
 end

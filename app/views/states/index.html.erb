@@ -1,0 +1,29 @@
+<h1>States#index</h1>
+
+<table>
+  <tr>
+    <th>State</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @states.each do |state| %>
+  <tr>
+    <td><%= state.text %></td>
+    <td><%= link_to 'Show', state %></td>
+    <td><%= link_to 'Edit', edit_state_path(state) %></td>
+    <td><%= link_to 'Destroy', state, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+  <% state.links.each do |link| %>
+  <tr>
+  	<td colspan="4"><%= link.domain.host %></td>
+  </tr>		
+  <% end %>
+  
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New State', new_state_path %>

@@ -3,7 +3,7 @@
 <table>
 <% @domains.each do |domain| %>
 	<tr>
-		<td colspan="5">
+		<td colspan="6">
 			<strong><%= domain.host %></strong>
 		</td>
 	</tr>
@@ -12,6 +12,7 @@
 	  <tr>
 	    <td><%= link.url %></td>
 	    <td><%= link.keyword.text %></td>
+	    <td><%= link.state.text %></td>
 	    <td><%= link_to 'Show', link %></td>
 	    <td><%= link_to 'Edit', edit_link_path(link) %></td>
 	    <td><%= link_to 'Destroy', link, :confirm => 'Are you sure?', :method => :delete %></td>

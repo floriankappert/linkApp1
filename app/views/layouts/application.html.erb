@@ -5,18 +5,48 @@
   <%= stylesheet_link_tag    "application" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+  <link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">
 </head>
 <body>
-<%= link_to "all links", links_path %> | 
-<%= link_to "all keywords", keywords_path %> | 
-<%= link_to "all domains", domains_path %> | 
-<%= link_to "all states", states_path %> |
-<%= link_to "all customers", customers_path %> |
-<%= link_to "all profiles", profiles_path %>   
+	<div class="topbar">
+		<div class="fill">
+			<div class="container">
+				<a class="brand" href="#">LinkApp</a>
+				<ul class="nav">
+					<li>
+						<%= link_to "all links", links_path %>				
+					</li>
+					<li>
+						<%= link_to "all keywords", keywords_path %>				
+					</li>
+					<li>
+						<%= link_to "all domains", domains_path %>				
+					</li>
+					<li>
+						<%= link_to "all states", states_path %>				
+					</li>
+					<li>
+						<%= link_to "all customers", customers_path %>				
+					</li>
+					<li>
+						<%= link_to "all profiles", profiles_path %>				
+					</li>
+				</ul>
+	 		</div>	  
+		</div>				
+	</div>
+	<div class="container">
+		<div class="content">
+			<%= yield %>
+		</div>
+		<footer>
+			<p>Videri Concept GmbH &copy; Copyright 2012</p>
+		</footer>	
+	</div>
 
 
 
-<%= yield %>
+
 
 
 </body>

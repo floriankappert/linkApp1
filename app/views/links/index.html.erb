@@ -1,25 +1,28 @@
-<h1>Listing links</h1>
-
-<table>
-<% @domains.each do |domain| %>
-	<tr>
-		<td colspan="6">
-			<strong><%= domain.host %></strong>
-		</td>
-	</tr>
-	
-	<% domain.links.each do |link| %>
-	  <tr>
-	    <td><%= link.url %></td>
-	    <td><%= link.keyword.text %></td>
-	    <td><%= link.state.text %></td>
-	    <td><%= link_to 'Show', link %></td>
-	    <td><%= link_to 'Edit', edit_link_path(link) %></td>
-	    <td><%= link_to 'Destroy', link, :confirm => 'Are you sure?', :method => :delete %></td>
-	  </tr>
+<div class="page-header">
+	<h1>Listing links</h1>
+</div>
+<div class="row">
+	<table>
+	<% @domains.each do |domain| %>
+		<tr>
+			<td colspan="6">
+				<strong><%= domain.host %></strong>
+			</td>
+		</tr>
+		
+		<% domain.links.each do |link| %>
+		  <tr>
+		    <td><%= link.url %></td>
+		    <td><%= link.keyword.text %></td>
+		    <td><%= link.state.text %></td>
+		    <td><%= link_to 'Show', link %></td>
+		    <td><%= link_to 'Edit', edit_link_path(link) %></td>
+		    <td><%= link_to 'Destroy', link, :confirm => 'Are you sure?', :method => :delete %></td>
+		  </tr>
+		<% end %>
 	<% end %>
-<% end %>
-</table>
-<br />
-
-<%= link_to 'New Link', new_link_path %>
+	</table>
+	<br />
+	
+	<%= link_to 'New Link', new_link_path %>
+</div>

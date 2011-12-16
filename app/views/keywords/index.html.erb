@@ -1,28 +1,32 @@
-<h1>Keywords#index</h1>
+<div clas="page-header">
+	<h1>Keywords#index</h1>
+</div>
+<div class="row">
+	<table>
+	  <tr>
+	    <th>Keyword</th>
+	    <th></th>
+	    <th></th>
+	    <th></th>
+	  </tr>
+	
+	<% @keywords.each do |keyword| %>
+	  <tr>
+	    <td><%= keyword.text %></td>
+	    <td><%= link_to 'Show', keyword %></td>
+	    <td><%= link_to 'Edit', edit_keyword_path(keyword) %></td>
+	    <td><%= link_to 'Destroy', keyword, :confirm => 'Are you sure?', :method => :delete %></td>
+	  </tr>
+	  <% keyword.links.each do |keyword| %>
+	  <tr>
+	  	<td colspan="4"><%= keyword.link.url %></td>	
+	  <% end %>
+	  </tr>
+	<% end %>
+	</table>
+	
+	<br />
+	
+	<%= link_to 'New Keyword', new_keyword_path %>
+</div>
 
-<table>
-  <tr>
-    <th>Keyword</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @keywords.each do |keyword| %>
-  <tr>
-    <td><%= keyword.text %></td>
-    <td><%= link_to 'Show', keyword %></td>
-    <td><%= link_to 'Edit', edit_keyword_path(keyword) %></td>
-    <td><%= link_to 'Destroy', keyword, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-  <% keyword.links.each do |keyword| %>
-  <tr>
-  	<td colspan="4"><%= keyword.link.url %></td>	
-  <% end %>
-  </tr>
-<% end %>
-</table>
-
-<br />
-
-<%= link_to 'New Keyword', new_keyword_path %>

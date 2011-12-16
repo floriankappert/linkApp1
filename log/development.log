@@ -10489,3 +10489,509 @@ Migrating to AddTextkeyToKeywords (20111212213619)
   [1m[35m (0.0ms)[0m  PRAGMA index_info('index_links_on_customer_id')
   [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("profiles")[0m
   [1m[35m (0.0ms)[0m  PRAGMA index_list("states")
+
+
+Started GET "/links" for 127.0.0.1 at Fri Dec 16 08:56:57 +0100 2011
+  Processing by LinksController#index as HTML
+  [1m[36mLink Load (0.1ms)[0m  [1mSELECT "links".* FROM "links" [0m
+  [1m[35mDomain Load (0.1ms)[0m  SELECT "domains".* FROM "domains" 
+Rendered links/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 115ms (Views: 108.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Fri Dec 16 08:56:58 +0100 2011
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at Fri Dec 16 08:56:58 +0100 2011
+Served asset /customers.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/domains.css?body=1" for 127.0.0.1 at Fri Dec 16 08:56:58 +0100 2011
+Served asset /domains.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Fri Dec 16 08:56:58 +0100 2011
+Served asset /home.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/keywords.css?body=1" for 127.0.0.1 at Fri Dec 16 08:56:58 +0100 2011
+Served asset /keywords.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/links.css?body=1" for 127.0.0.1 at Fri Dec 16 08:56:58 +0100 2011
+Served asset /links.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Fri Dec 16 08:56:58 +0100 2011
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/states.css?body=1" for 127.0.0.1 at Fri Dec 16 08:56:58 +0100 2011
+Served asset /states.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Fri Dec 16 08:56:58 +0100 2011
+Served asset /jquery.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Fri Dec 16 08:56:58 +0100 2011
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at Fri Dec 16 08:56:58 +0100 2011
+Served asset /best_in_place.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at Fri Dec 16 08:56:58 +0100 2011
+Served asset /customers.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/domains.js?body=1" for 127.0.0.1 at Fri Dec 16 08:56:58 +0100 2011
+Served asset /domains.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Fri Dec 16 08:56:58 +0100 2011
+Served asset /home.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at Fri Dec 16 08:56:58 +0100 2011
+Served asset /jquery.purr.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/keywords.js?body=1" for 127.0.0.1 at Fri Dec 16 08:56:58 +0100 2011
+Served asset /keywords.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/links.js?body=1" for 127.0.0.1 at Fri Dec 16 08:56:58 +0100 2011
+Served asset /links.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/states.js?body=1" for 127.0.0.1 at Fri Dec 16 08:56:58 +0100 2011
+Served asset /states.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Fri Dec 16 08:56:58 +0100 2011
+Served asset /application.js - 304 Not Modified (52ms)
+
+
+Started GET "/links" for 127.0.0.1 at Fri Dec 16 08:56:59 +0100 2011
+  Processing by LinksController#index as HTML
+  [1m[36mLink Load (0.1ms)[0m  [1mSELECT "links".* FROM "links" [0m
+  [1m[35mDomain Load (0.1ms)[0m  SELECT "domains".* FROM "domains" 
+Rendered links/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 46ms (Views: 39.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Fri Dec 16 08:56:59 +0100 2011
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at Fri Dec 16 08:56:59 +0100 2011
+Served asset /customers.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/links.css?body=1" for 127.0.0.1 at Fri Dec 16 08:56:59 +0100 2011
+Served asset /links.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/keywords.css?body=1" for 127.0.0.1 at Fri Dec 16 08:56:59 +0100 2011
+Served asset /keywords.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Fri Dec 16 08:56:59 +0100 2011
+Served asset /home.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/domains.css?body=1" for 127.0.0.1 at Fri Dec 16 08:56:59 +0100 2011
+Served asset /domains.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Fri Dec 16 08:56:59 +0100 2011
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/states.css?body=1" for 127.0.0.1 at Fri Dec 16 08:56:59 +0100 2011
+Served asset /states.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Fri Dec 16 08:56:59 +0100 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Fri Dec 16 08:56:59 +0100 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at Fri Dec 16 08:56:59 +0100 2011
+Served asset /best_in_place.js - 304 Not Modified (53ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at Fri Dec 16 08:56:59 +0100 2011
+Served asset /customers.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/domains.js?body=1" for 127.0.0.1 at Fri Dec 16 08:56:59 +0100 2011
+Served asset /domains.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Fri Dec 16 08:56:59 +0100 2011
+Served asset /home.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at Fri Dec 16 08:56:59 +0100 2011
+Served asset /jquery.purr.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/keywords.js?body=1" for 127.0.0.1 at Fri Dec 16 08:56:59 +0100 2011
+Served asset /keywords.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/links.js?body=1" for 127.0.0.1 at Fri Dec 16 08:56:59 +0100 2011
+Served asset /links.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/states.js?body=1" for 127.0.0.1 at Fri Dec 16 08:56:59 +0100 2011
+Served asset /states.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Fri Dec 16 08:56:59 +0100 2011
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/keywords" for 127.0.0.1 at Fri Dec 16 08:57:00 +0100 2011
+  Processing by KeywordsController#index as HTML
+  [1m[36mKeyword Load (0.1ms)[0m  [1mSELECT "keywords".* FROM "keywords" [0m
+  [1m[35mLink Load (0.1ms)[0m  SELECT "links".* FROM "links" 
+  [1m[36mLink Load (0.2ms)[0m  [1mSELECT "links".* FROM "links" WHERE "links"."keyword_id" = 1[0m
+  [1m[35mLink Load (0.1ms)[0m  SELECT "links".* FROM "links" WHERE "links"."keyword_id" = 2
+Rendered keywords/index.html.erb within layouts/application (19.8ms)
+Completed 200 OK in 104ms (Views: 96.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at Fri Dec 16 08:57:00 +0100 2011
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Fri Dec 16 08:57:00 +0100 2011
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Fri Dec 16 08:57:00 +0100 2011
+Served asset /home.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/keywords.css?body=1" for 127.0.0.1 at Fri Dec 16 08:57:00 +0100 2011
+Served asset /keywords.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/links.css?body=1" for 127.0.0.1 at Fri Dec 16 08:57:00 +0100 2011
+Served asset /links.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/domains.css?body=1" for 127.0.0.1 at Fri Dec 16 08:57:00 +0100 2011
+Served asset /domains.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Fri Dec 16 08:57:00 +0100 2011
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/states.css?body=1" for 127.0.0.1 at Fri Dec 16 08:57:00 +0100 2011
+Served asset /states.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Fri Dec 16 08:57:00 +0100 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Fri Dec 16 08:57:00 +0100 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at Fri Dec 16 08:57:00 +0100 2011
+Served asset /best_in_place.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at Fri Dec 16 08:57:00 +0100 2011
+Served asset /customers.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/domains.js?body=1" for 127.0.0.1 at Fri Dec 16 08:57:00 +0100 2011
+Served asset /domains.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Fri Dec 16 08:57:00 +0100 2011
+Served asset /home.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at Fri Dec 16 08:57:00 +0100 2011
+Served asset /jquery.purr.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/keywords.js?body=1" for 127.0.0.1 at Fri Dec 16 08:57:00 +0100 2011
+Served asset /keywords.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/links.js?body=1" for 127.0.0.1 at Fri Dec 16 08:57:00 +0100 2011
+Served asset /links.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/states.js?body=1" for 127.0.0.1 at Fri Dec 16 08:57:00 +0100 2011
+Served asset /states.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Fri Dec 16 08:57:00 +0100 2011
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/domains" for 127.0.0.1 at Fri Dec 16 08:57:03 +0100 2011
+  Processing by DomainsController#index as HTML
+  [1m[36mDomain Load (0.1ms)[0m  [1mSELECT "domains".* FROM "domains" [0m
+Rendered domains/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 83ms (Views: 81.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at Fri Dec 16 08:57:03 +0100 2011
+Served asset /customers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Fri Dec 16 08:57:03 +0100 2011
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/domains.css?body=1" for 127.0.0.1 at Fri Dec 16 08:57:03 +0100 2011
+Served asset /domains.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/links.css?body=1" for 127.0.0.1 at Fri Dec 16 08:57:03 +0100 2011
+Served asset /links.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/keywords.css?body=1" for 127.0.0.1 at Fri Dec 16 08:57:03 +0100 2011
+Served asset /keywords.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Fri Dec 16 08:57:03 +0100 2011
+Served asset /home.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Fri Dec 16 08:57:03 +0100 2011
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/states.css?body=1" for 127.0.0.1 at Fri Dec 16 08:57:03 +0100 2011
+Served asset /states.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Fri Dec 16 08:57:03 +0100 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Fri Dec 16 08:57:03 +0100 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at Fri Dec 16 08:57:03 +0100 2011
+Served asset /best_in_place.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at Fri Dec 16 08:57:03 +0100 2011
+Served asset /customers.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/domains.js?body=1" for 127.0.0.1 at Fri Dec 16 08:57:03 +0100 2011
+Served asset /domains.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Fri Dec 16 08:57:03 +0100 2011
+Served asset /home.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at Fri Dec 16 08:57:03 +0100 2011
+Served asset /jquery.purr.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/keywords.js?body=1" for 127.0.0.1 at Fri Dec 16 08:57:03 +0100 2011
+Served asset /keywords.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/links.js?body=1" for 127.0.0.1 at Fri Dec 16 08:57:03 +0100 2011
+Served asset /links.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/states.js?body=1" for 127.0.0.1 at Fri Dec 16 08:57:03 +0100 2011
+Served asset /states.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Fri Dec 16 08:57:03 +0100 2011
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/states" for 127.0.0.1 at Fri Dec 16 08:57:04 +0100 2011
+  Processing by StatesController#index as HTML
+  [1m[35mState Load (0.1ms)[0m  SELECT "states".* FROM "states" 
+  [1m[36mLink Load (0.1ms)[0m  [1mSELECT "links".* FROM "links" WHERE "links"."state_id" = 1[0m
+  [1m[35mLink Load (0.1ms)[0m  SELECT "links".* FROM "links" WHERE "links"."state_id" = 2
+  [1m[36mLink Load (0.1ms)[0m  [1mSELECT "links".* FROM "links" WHERE "links"."state_id" = 3[0m
+Rendered states/index.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 99ms (Views: 97.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Fri Dec 16 08:57:04 +0100 2011
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Fri Dec 16 08:57:04 +0100 2011
+Served asset /home.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/links.css?body=1" for 127.0.0.1 at Fri Dec 16 08:57:04 +0100 2011
+Served asset /links.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at Fri Dec 16 08:57:04 +0100 2011
+Served asset /customers.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/keywords.css?body=1" for 127.0.0.1 at Fri Dec 16 08:57:04 +0100 2011
+Served asset /keywords.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/domains.css?body=1" for 127.0.0.1 at Fri Dec 16 08:57:04 +0100 2011
+Served asset /domains.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Fri Dec 16 08:57:04 +0100 2011
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/states.css?body=1" for 127.0.0.1 at Fri Dec 16 08:57:04 +0100 2011
+Served asset /states.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Fri Dec 16 08:57:04 +0100 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Fri Dec 16 08:57:04 +0100 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at Fri Dec 16 08:57:04 +0100 2011
+Served asset /best_in_place.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at Fri Dec 16 08:57:04 +0100 2011
+Served asset /customers.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/domains.js?body=1" for 127.0.0.1 at Fri Dec 16 08:57:04 +0100 2011
+Served asset /domains.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Fri Dec 16 08:57:04 +0100 2011
+Served asset /home.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at Fri Dec 16 08:57:04 +0100 2011
+Served asset /jquery.purr.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/keywords.js?body=1" for 127.0.0.1 at Fri Dec 16 08:57:04 +0100 2011
+Served asset /keywords.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/links.js?body=1" for 127.0.0.1 at Fri Dec 16 08:57:04 +0100 2011
+Served asset /links.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/states.js?body=1" for 127.0.0.1 at Fri Dec 16 08:57:04 +0100 2011
+Served asset /states.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Fri Dec 16 08:57:04 +0100 2011
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/customers" for 127.0.0.1 at Fri Dec 16 08:57:07 +0100 2011
+  Processing by CustomersController#index as HTML
+  [1m[35mCustomer Load (0.1ms)[0m  SELECT "customers".* FROM "customers" 
+Rendered customers/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 48ms (Views: 46.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Fri Dec 16 08:57:07 +0100 2011
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/keywords.css?body=1" for 127.0.0.1 at Fri Dec 16 08:57:07 +0100 2011
+Served asset /keywords.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/links.css?body=1" for 127.0.0.1 at Fri Dec 16 08:57:07 +0100 2011
+Served asset /links.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/customers.css?body=1" for 127.0.0.1 at Fri Dec 16 08:57:07 +0100 2011
+Served asset /customers.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/domains.css?body=1" for 127.0.0.1 at Fri Dec 16 08:57:07 +0100 2011
+Served asset /domains.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Fri Dec 16 08:57:07 +0100 2011
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Fri Dec 16 08:57:07 +0100 2011
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/states.css?body=1" for 127.0.0.1 at Fri Dec 16 08:57:07 +0100 2011
+Served asset /states.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Fri Dec 16 08:57:07 +0100 2011
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Fri Dec 16 08:57:07 +0100 2011
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at Fri Dec 16 08:57:07 +0100 2011
+Served asset /best_in_place.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/customers.js?body=1" for 127.0.0.1 at Fri Dec 16 08:57:07 +0100 2011
+Served asset /customers.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/domains.js?body=1" for 127.0.0.1 at Fri Dec 16 08:57:07 +0100 2011
+Served asset /domains.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Fri Dec 16 08:57:07 +0100 2011
+Served asset /home.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at Fri Dec 16 08:57:07 +0100 2011
+Served asset /jquery.purr.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/keywords.js?body=1" for 127.0.0.1 at Fri Dec 16 08:57:07 +0100 2011
+Served asset /keywords.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/links.js?body=1" for 127.0.0.1 at Fri Dec 16 08:57:07 +0100 2011
+Served asset /links.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/states.js?body=1" for 127.0.0.1 at Fri Dec 16 08:57:07 +0100 2011
+Served asset /states.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Fri Dec 16 08:57:07 +0100 2011
+Served asset /application.js - 304 Not Modified (2ms)

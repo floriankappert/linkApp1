@@ -1,9 +1,97 @@
-<h1>Customers#show</h1>
-<p>
-  <b>Customer</b>
-  <%= @customer.name %>
-</p>
+<div class="page-header">
+	<h1><%= @customer.name %> </h1>
+	<small><%= link_to 'Edit', edit_customer_path(@customer), :class => "btn small success" %> <%= link_to 'Back', customers_path, :class => "btn small info" %></small>
+</div>
+<div class="row">
+	<div class="span9">
+		<table class="zebra-striped bordered-table">
+			<tbody>
+				<tr>
+					<th>
+						<h3>Links</h3>
+					</th>
+				</tr>
+				<% @customer.links.each do |link| %>
+				<tr>
+					<td>
+						<%= link.url %>
+					</td>
+				</tr>
+				<% end %>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td>
+						<h4>New Link for <%= @customer.name %></h4>
+						<%= form_for([@customer, @customer.links.build]) do |f| %>
+							<div class="clearfix">
+								  <div class="field">
+								    <%= f.label :url %>
+								    <div class="input">
+							    		<%= f.text_field :url %>
+						    		</div>
+								  </div>
+								  
+								  <div class="field">
+								    <%= f.label :keyword %>
+							    	<div class="input">
+								    	<%= f.collection_select(:keyword_id, Keyword.all, :id, :text) %>
+							    	</div>
+								  </div>
+								  
+								  <div class="field">
+								    <%= f.label :state %>
+								    <div class="input">
+								    	<%= f.collection_select(:state_id, State.all, :id, :text) %>
+							    	</div>
+								  </div>
+								  
+								  <div class="field">
+								    <%= f.hidden_field :customer_id %>
+								  </div>
+							</div>
+							<%= f.submit :class => "btn success"%>
+						<% end %>
+					</td>
+				</tr>
+			</tfoot>
+		</table>
+	</div>
+	<div class="span6">
+		<table class="zebra-striped bordered-table">
+			<tbody>
+				<tr>
+					<th>
+						<h3>Keywords for <%= @customer.name %></h3>
+					</th>
+				</tr>
+				<% @customer.keywords.each do |keyword| %>
+				<tr>
+					<td>
+						<%= keyword.text %>
+					</td>
+				</tr>
+				<% end %>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td>
+						<h4></h4>
+						<%= form_for([@customer, @customer.keywords.build]) do |f| %>
+							<div class="clearfix">
+								<label >New Keyword:</label>
+								<div class="input">
+									<%= f.text_field :text %>
+									<%= f.hidden_field :customer_id %>
+								</div>
+							</div>
+							<%= f.submit :class => "btn success"%>
+						<% end %>
+					</td>
+				</tr>
+			</tfoot>
+		</table>
+	</div>
+</div>
 
 
-<%= link_to 'Edit', edit_customer_path(@customer) %> |
-<%= link_to 'Back', customers_path %>

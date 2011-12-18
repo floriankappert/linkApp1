@@ -17,9 +17,9 @@
 	    <td><%= link_to 'Edit', edit_keyword_path(keyword) %></td>
 	    <td><%= link_to 'Destroy', keyword, :confirm => 'Are you sure?', :method => :delete %></td>
 	  </tr>
-	  <% keyword.links.each do |keyword| %>
+	  <% keyword.links.each do |link| %>
 	  <tr>
-	  	<td colspan="4"><%= keyword.link.url %></td>	
+	  	<td colspan="4"><%= link.url %></td>	
 	  <% end %>
 	  </tr>
 	<% end %>

@@ -28,6 +28,13 @@
     <%= f.collection_select(:state_id, State.all, :id, :text) %>
   </div>
   
+  <div class="field">
+    <%= f.label :customer %><br />
+    
+    <%= f.collection_select(:customer_id, Customer.all, :id, :name) %>
+  </div>
+  
+  
   <div class="actions">
     <%= f.submit %>
   </div>

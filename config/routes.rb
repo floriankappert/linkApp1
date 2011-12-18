@@ -1,46 +1,5 @@
 LinkApp1::Application.routes.draw do
-  get "customers/index"
-
-  get "customers/new"
-
-  get "customers/edit"
-
-  get "customers/show"
-
-  get "states/index"
-
-  get "states/new"
-
-  get "states/edit"
-
-  get "states/show"
-
-  get "domains/index"
-
-  get "domains/show"
-
-  get "keywords/index"
-
-  get "keywords/new"
-
-  get "keywords/edit"
-
-  get "keywords/show"
-
-  get "keyword/index"
-
-  get "keyword/new"
-
-  get "keyword/create"
-
-  get "keyword/show"
-
-  get "keyword/edit"
-
-  get "keyword/update"
-
-  get "keyword/destroy"
-
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -48,12 +7,19 @@ LinkApp1::Application.routes.draw do
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
   root :to => 'home#index'
+  get "home/index"
+   
   resources :links
-  resources :customers
   resources :domains
   resources :profiles
   resources :states
   resources :keywords
+  
+  resources :customers do
+    resources :keywords
+    resources :links
+    resources :connections
+  end
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'

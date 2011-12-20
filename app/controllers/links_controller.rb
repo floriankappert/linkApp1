@@ -43,12 +43,13 @@ class LinksController < ApplicationController
   # POST /links.json
   def create
     @link = Link.new(params[:link])
-    
+    @link = Link.find_or_create_by_url_and_customer_id_and_keyword_id(:url => @link.url,:customer_id => @link.customer_id,:keyword_id => @link.keyword_id)
+    @customer = Customer.find(params[:customer_id])
     @link.domain = Domain.find_or_create_by_host(@link.host)
 
     respond_to do |format|
       if @link.save
-        format.html { redirect_to @link, :notice => 'Link was successfully created.' }
+        format.html { redirect_to @customer, :notice => 'Link was successfully created.' }
         format.json { render :json => @link, :status => :created, :location => @link }
       else
         format.html { render :action => "new" }

@@ -20,10 +20,12 @@ class KeywordsController < ApplicationController
   
   def create
     @keyword = Keyword.new(params[:keyword])
-
+    @keyword = Keyword.find_or_create_by_text_and_id(:text => @keyword.text,:customer_id => @keyword.customer_id)
+    @customer = Customer.find(params[:customer_id])
+    
     respond_to do |format|
       if @keyword.save
-        format.html { redirect_to @keyword, :notice => 'Keyword was successfully created.' }
+        format.html { redirect_to @customer, :notice => 'Keyword was successfully created.' }
         format.json { render :json => @keyword, :status => :created, :location => @keyword }
       else
         format.html { render :action => "new" }

@@ -3,6 +3,14 @@
 	<small><%= link_to 'Edit', edit_customer_path(@customer), :class => "btn small success" %> <%= link_to 'Back', customers_path, :class => "btn small info" %></small>
 </div>
 <div class="row">
+	<% if notice %>
+	<div class="span16">
+		<div class="alert-message success">
+			<a class="close" href="#">×</a>
+			<p><%= notice %></p>
+		</div>
+	</div>
+	<% end %>
 	<div class="span9">
 		<table class="zebra-striped bordered-table">
 			<tbody>
